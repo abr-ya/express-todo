@@ -2,11 +2,11 @@ import * as dotenv from "dotenv";
 import express from "express";
 import cors from "cors";
 
-import { homeRouter } from "./home/home.router";
+import { homeRouter } from "./home/home.router.js";
 
 dotenv.config();
 
-const PORT: number = parseInt(process.env.PORT as string, 10) || 8000;
+const PORT = parseInt(process.env.PORT, 10) || 8000;
 
 const app = express();
 

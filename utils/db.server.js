@@ -1,9 +1,9 @@
 import { PrismaClient } from "@prisma/client";
 
-let db: PrismaClient;
+let db;
 
-declare global {
-  var __db: PrismaClient | undefined;
+declare {
+  var __db;
 }
 
 if (!global.__db) {
